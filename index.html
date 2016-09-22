@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                
+                <!--div class="remodal remodal-img" data-remodal-id="portrait-modal"-->
+				 <div class="weixin">
+				<img src="static/image/ianok.jpg" alt="">
+                   
+                </div>
+                <h1 id="username" >ianok</h1>
+                <h4 id="persona-tag" >Java / Web / C++ /互联网</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">黄新章</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">长春工程学院</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2004</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">13391070581</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">ianok@sohu.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/ianok</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">html/css</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">C++</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Ajax、Html</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">socket、Apache ActiveMQ、MongoDB、MySQL、Redis</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">熟练掌握oracle数据库</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>长春工程学院 - 计算机科学与技术（本科）1999-2004</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2016 /7--2016 /9：韩华商业设备（上海）有限公司－高级软件工程师</h3>
+                        <p>用java定制开发门禁系统插件
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2011 /11--2016 /6：上海宝康电子控制工程有限公司－中、高级软件工程师</h3>
+                        <p>按计划完成老板布置的任务
+                        </p>
+                    </li>
+					 <li>
+                        <h3>2006 /8--2011 /10： 上海华钟计算机软件开发有限公司－软件工程师</h3>
+                        <p>按时按量按质完成布置的任务
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2016 /7 -- 2016 /9 ： 雅安火灾报警接入系统</h3>
+                        <p>
+                            使用java开发，根据城市消防远程监控系统（GB-26875）的报警传输网络通信协议和第三方北大青鸟报警主机进行信息交互对接 负责支持跟现场沟通测试，部署软件，解决问题
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2015 /1 -- 2016 /4 ： VIEWALL3.5</h3>
+                        <p>
+                            获取前端摄像头数据，调用千视通的视频接口，来做视频及车辆特征分析。分前台JSP展示页面和后台处理服务。 
+							使用jsp开发前台车辆特征显示页面。 使用vs2010的c++结合ACE进行后台视频分析模块和车辆特征模块开发。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2013 /6 -- 2014 /12 ： 常州公安局新北分局电警项目</h3>
+                        <p>
+                            是一个综合管理平台项目，主要使用SSI框架，使用jQuery，CSS，JSON 及JSP技术开发前台页面，Java技术开发后台；项目利用道路卡口设备进行车辆监控，可查询车辆行驶轨迹，套牌车比对，区域碰撞比对，进行车辆布控；对路口进行实时视频监控，设置场景回看等。	本人主要进行系统设计相关文档的编写，对系统功能模块进行合理切分与工时预估；开发了预置位配置页面、卡口服务配置页面、设备位置管理页面；实时监控功能的视频实时监控页面、历史视频检索页面；挖掘分析功能的卡口视频联动页面。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2010 /9 -- 2012 /6 ： 非标项目</h3>
+                        <p>
+                            工程项目中的各种非标准化工具定制开发
+							使用VC++进行违法车辆数据转换软件开发：  违法车辆数据通过webservices上传到易华录平台；  违法车辆数据通过第三方给的dll上传到海康、博康平台；  违法数据通过IMB的MQ上传到海信平台等；  宝钢车辆门岗项目中完善服务端的比对服务软件处理
+                        </p>
+                    </li>
+					  <li>
+                        <h3>2007 /3 -- 2008 /6 ： 上交所预警监控系统项目 </h3>
+                        <p>
+                            上交所预警监控系统项目的后期维护升级 
+							主要负责使用VC++技术，对用户提出的问题进行修改和增添；工作内容主要有 1：主机电文关于B股的修正及模拟数据主机和主机电文测试的增加 
+							2：编写统计机构买卖情况的类，统计日后数据的修改测试 
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                 <p>    1.有5年及以上JAVA经验，熟悉Ajax、Html、JQuery开发技术；  </p>
+				 <p>	2.熟练掌握Eclipse及VS2010集成开发环境；  </p>
+				 <p>	3.熟悉掌握Ajax/Html/Javascript Web应用开发，有过Apache ActiveMQ集成开发；  </p> 
+				 <p>	4.熟悉掌握主流开源框架SSI，springMVC,Java应用服务器tomcat；   </p>
+				 <p>	5.熟悉掌握关系数据库Oracle并熟悉其数据类型和常用语法，对Mysql有了解；  </p>
+				 <p>	6.具有较强的分析能力和解决问题的能力；  </p>
+				 <p>	7.有良好的团队合作意识，耐心，诚恳，有强烈的责任心和积极主动的工作态度，有优秀的学习能力； 
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
